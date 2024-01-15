@@ -1,20 +1,22 @@
 import React from 'react';
-import { Typography } from '@mui/material';
+import { Typography, CircularProgress } from '@mui/material';
 
 // Define an interface for the component props
 interface QuoteDisplayProps {
-    displayQuote: string;
+    displayQuote: string | null;
+    isLoading: boolean;
 }
 
-const QuoteDisplay: React.FC<QuoteDisplayProps> = ({ displayQuote }) => (
-    displayQuote ? (
+const QuoteDisplay: React.FC<QuoteDisplayProps> = ({ displayQuote, isLoading }) => {
+    if (isLoading) {
+        return <CircularProgress sx={{ mt: 3 }} />;
+    }
+
+    return displayQuote ? (
         <Typography variant="h6" sx={{ mt: 3, textAlign: 'center' }}>
             {`"${displayQuote}"`}
         </Typography>
-    ) : null
-);
-
-
-
+    ) : null;
+};
 
 export default QuoteDisplay;

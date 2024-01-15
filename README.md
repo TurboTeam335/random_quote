@@ -28,6 +28,7 @@ A robust full-stack application tailored for quote enthusiasts. Users can effort
 The following technologies are used in this project:
 
 * React
+* TypeScript
 * Material UI
 * Python
 * Flask
@@ -53,7 +54,7 @@ Install Dependencies:
 `````pip install -r requirements.txt`````
 
 Run the Microservice:
-`````python app.py`````
+`````python3 app.py`````
 
 Access the microservice at http://localhost:4000.
 

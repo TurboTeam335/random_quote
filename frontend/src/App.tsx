@@ -11,10 +11,12 @@ function App() {
     const backendURL = "http://localhost:4000";
     
     const [quote, setQuote] = useState<string>("");
-    const [displayQuote, setDisplayQuote] = useState<string>("");
+    const [displayQuote, setDisplayQuote] = useState<string | null>(null);
+    const [isLoading, setIsLoading] = useState<boolean>(false);
 
     useEffect(() => {
         const fetchRandomQuote = async () => {
+            setIsLoading(true);
             try {
                 const response = await fetch(`${backendURL}/random`);
                 const data = await response.json();
@@ -22,6 +24,7 @@ function App() {
             } catch (error) {
                 console.error("Error fetching random quote:", error);
             }
+            setIsLoading(false);
         };
         fetchRandomQuote();
     }, [backendURL]); // <-- Added dependency here
@@ -42,6 +45,7 @@ function App() {
     }
     
     const handleGenerate = async (): Promise<void> => {
+        setIsLoading(true);
         try {
             const response = await fetch(`${backendURL}/random`);
             const data = await response.json();
@@ -49,6 +53,7 @@ function App() {
         } catch (error) {
             console.error("Error fetching random quote:", error);
         }
+        setIsLoading(false);
     }
 
     return (
@@ -74,7 +79,7 @@ function App() {
                 handleGenerate={handleGenerate}
             />
 
-            <QuoteDisplay displayQuote={displayQuote} />
+            <QuoteDisplay displayQuote={displayQuote} isLoading={isLoading} />
         </Container>
     );
 }

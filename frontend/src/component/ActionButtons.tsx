@@ -15,7 +15,15 @@ const ActionButtons: React.FC<ActionButtonsProps> = ({ handleSave, handleGenerat
                     variant="contained" 
                     color="primary"
                     fullWidth
-                    onClick={handleSave}>
+                    onClick={handleSave}
+                    sx={{
+                        fontSize: '1.2em',
+                        fontWeight: 'bold',
+                        transition: '0.3s',
+                        '&:hover': {
+                            transform: 'scale(1.02)',
+                        },
+                    }}>
                     Save Quote
                 </Button>
             </Grid>
@@ -24,7 +32,15 @@ const ActionButtons: React.FC<ActionButtonsProps> = ({ handleSave, handleGenerat
                     variant="contained" 
                     color="secondary"
                     fullWidth
-                    onClick={handleGenerate}>
+                    onClick={handleGenerate}
+                    sx={{
+                        fontSize: '1.2em',
+                        fontWeight: 'bold',
+                        transition: '0.3s',
+                        '&:hover': {
+                            transform: 'scale(1.02)',
+                        },
+                    }}>
                     Generate Random Quote
                 </Button>
             </Grid>
