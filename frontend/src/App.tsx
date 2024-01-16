@@ -5,11 +5,9 @@ import QuoteDisplay from './component/QuoteDisplay';
 import ActionButtons from './component/ActionButtons';
 
 function App() {
-    const backendURL = "https://afternoon-depths-72364-ad550251f5f5.herokuapp.com/"
-
-
-    //  When testing the local backend 
-    // const backendURL = "http://localhost:4000";
+    const backendURL = process.env.NODE_ENV === 'production'
+    ? "https://afternoon-depths-72364-ad550251f5f5.herokuapp.com"
+    : "http://localhost:4000";
     
     const [quote, setQuote] = useState<string>("");
     const [displayQuote, setDisplayQuote] = useState<string | null>(null);
