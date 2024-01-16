@@ -1,5 +1,8 @@
 {
   "scripts": {
     "build": "cd frontend && npm install && npm run build && cd .. && mv frontend/build ."
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
