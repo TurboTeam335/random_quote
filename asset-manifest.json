@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/TurboTeam335/random_quote/static/css/main.4b635cb3.css",
-    "main.js": "/TurboTeam335/random_quote/static/js/main.ad098307.js",
-    "index.html": "/TurboTeam335/random_quote/index.html",
-    "main.4b635cb3.css.map": "/TurboTeam335/random_quote/static/css/main.4b635cb3.css.map",
-    "main.ad098307.js.map": "/TurboTeam335/random_quote/static/js/main.ad098307.js.map"
+    "main.css": "/random_quote/static/css/main.4b635cb3.css",
+    "main.js": "/random_quote/static/js/main.ad098307.js",
+    "index.html": "/random_quote/index.html",
+    "main.4b635cb3.css.map": "/random_quote/static/css/main.4b635cb3.css.map",
+    "main.ad098307.js.map": "/random_quote/static/js/main.ad098307.js.map"
   },
   "entrypoints": [
     "static/css/main.4b635cb3.css",
