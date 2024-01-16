@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, send_from_directory
+from flask_cors import CORS  
 from db import SessionLocal
 from service import QuoteService
 from repository import QuoteRepository
@@ -6,7 +7,7 @@ import os
 from flask_cors import CORS  
 
 app = Flask(__name__, static_folder='build', static_url_path='')
-CORS(app)  
+CORS(app) 
 
 # Create a new SessionLocal instance
 session = SessionLocal()
