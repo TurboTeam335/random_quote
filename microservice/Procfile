@@ -1,1 +1,1 @@
-web: gunicorn microservice.app:app
+web: python app.py
