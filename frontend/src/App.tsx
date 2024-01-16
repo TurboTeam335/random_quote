@@ -6,7 +6,7 @@ import ActionButtons from './component/ActionButtons';
 
 function App() {
     const backendURL = process.env.NODE_ENV === 'production'
-    ? "https://afternoon-depths-72364-ad550251f5f5.herokuapp.com"
+    ? "https://quote-microservice-7b005401d090.herokuapp.com/"
     : "http://localhost:4000";
     
     const [quote, setQuote] = useState<string>("");
