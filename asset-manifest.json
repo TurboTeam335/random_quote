@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TurboTeam335/random_quote/static/css/main.4b635cb3.css",
+    "main.js": "/TurboTeam335/random_quote/static/js/main.1e3bc9f0.js",
+    "index.html": "/TurboTeam335/random_quote/index.html",
+    "main.4b635cb3.css.map": "/TurboTeam335/random_quote/static/css/main.4b635cb3.css.map",
+    "main.1e3bc9f0.js.map": "/TurboTeam335/random_quote/static/js/main.1e3bc9f0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b635cb3.css",
+    "static/js/main.1e3bc9f0.js"
+  ]
+}
