@@ -16,7 +16,7 @@ A robust full-stack application tailored for quote enthusiasts. Users can effort
 
 ## Live Demo
 * [View Repository](https://github.com/TurboTeam335/random_quote)
-* [Launch Application](hhttps://turboteam335.github.io/random_quote/)
+* [Launch Application](https://turboteam335.github.io/random_quote/)
 
 ## Features
 
