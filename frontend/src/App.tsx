@@ -13,6 +13,7 @@ function App() {
     const [displayQuote, setDisplayQuote] = useState<string | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(false);
 
+    
     useEffect(() => {
         const fetchRandomQuote = async () => {
             setIsLoading(true);
