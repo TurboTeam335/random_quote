@@ -15,8 +15,8 @@ A robust full-stack application tailored for quote enthusiasts. Users can effort
 - [License](#license)
 
 ## Live Demo
-* [View Repository](https://github.com/TurboTeam335/quote-generator)
-* [Launch Application](https://6513747a847336316b8e4aa9--relaxed-biscuit-401065.netlify.app/)
+* [View Repository](https://github.com/TurboTeam335/random_quote)
+* [Launch Application](hhttps://turboteam335.github.io/random_quote/)
 
 ## Features
 
